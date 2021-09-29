@@ -24,7 +24,7 @@ def get_last_coin():
     latest_announcement = latest_announcement.text
 
     # Binance makes several annoucements, irrevelant ones will be ignored
-    exclusions = ['Futures', 'Margin', 'adds']
+    exclusions = ['Futures', 'Margin', 'adds', 'Introducing']
     for item in exclusions:
         if item in latest_announcement:
             return None
